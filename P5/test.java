@@ -1,5 +1,5 @@
 package P5;
 
 public class test {
-    tvgtg
+    tvgtv t1 = new tvgtv();
 }
