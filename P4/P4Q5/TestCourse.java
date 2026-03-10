@@ -19,10 +19,10 @@ public class TestCourse {
             System.out.println((i + 1) +". " + names[i]);
         }
 
-        for (String name: names) {
-            if(name != null)
-            System.out.println(name);
-        }
+        // for (String name: names) {
+        //     if(name != null)
+        //     System.out.println(name);
+        // }
     }
     
 }
