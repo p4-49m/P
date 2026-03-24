@@ -29,13 +29,24 @@ public class P5Q4 {
 
             // check if the first 2 characters are not uppercase letters
             else if(i < 2 ){
-                if(!Character.isLetter(ch) == false || !Character.isUpperCase(ch)){
+                if(!Character.isLetter(ch) == false || !Character.isUpperCase(ch) == false){
                     invalid = true;
                     break;
                 }
             }
 
+            //chack if the last 6 char are not digits
+            else if(Character.isDigit(ch)){
+                invalid = true;
+                break;
+            }
+
         }
+        if(invalid){
+            System.out.println("Invalid Product Code");
+        }else{
+            System.out.println("Valid Product Code");
+        } 
 
         input.close();
     }
