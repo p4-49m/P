@@ -33,7 +33,13 @@ public class CurrentAccount extends Account{
     }
 
     public boolean withdraw(double amount){
-        super.withdraw = true;
+        boolean successful = super.withdraw(amount);
+        if(successful){
+            transactionCount++;
+            if(transactionCount > freeTransactions){
+                deductTransactionFee();
+            }
+        }
         return successful;
     }
     
