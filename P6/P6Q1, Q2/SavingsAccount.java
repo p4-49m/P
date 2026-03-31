@@ -1,10 +1,8 @@
-package P6;
-
 public class SavingsAccount extends Account{
     private static double interestRate = 0.05;
 
     // no-arg constructor
-    public SavingAccount(){
+    public SavingsAccount(){
         // super();
     }
 
@@ -14,7 +12,7 @@ public class SavingsAccount extends Account{
     }
 
     public static double getInterestRate() {
-        retrun interestRate;
+        return interestRate;
         
     }
 
@@ -23,7 +21,7 @@ public class SavingsAccount extends Account{
     }
 
     public double calcInterest(){
-        return getbalance() * interestRate / 12;
+        return getBalance() * interestRate / 12;
     }
 
     public void addInterest(){

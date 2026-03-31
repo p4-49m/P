@@ -1,5 +1,3 @@
-package P6;
-
 import java.util.Date;
 
 public class Account {
@@ -41,6 +39,20 @@ public class Account {
         }else{
             balance -= amount;
             return true;
+        }
+    }
+
+    public String toString(){
+        return String.format("Account number: %s\nBalance: RM%.2f\nDate Created: %s",
+                                    accNumber, balance, dateCreated);
+    }
+
+    public boolean equals(Object 0){
+        Acccount otherAcc = (Account) 0;
+        if (this.accNumber == otherAcc.accNumber){
+            return true;
+        }else{
+            return false;
         }
     }
 }
