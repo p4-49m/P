@@ -22,23 +22,23 @@ public class Employee{
         return basicSalary;
     }
 
-    public void setName(String name){
+    public String setName(String name){
         this.name = name;
     }
 
-    public void setYearjoined(int yearjoined){
+    public int setYearjoined(int yearjoined){
         this.yearjoined = yearjoined;
     }
 
-    public void setBasicSalary(double basicSalary){
+    public double setBasicSalary(double basicSalary){
         this.basicSalary = basicSalary;
     }
 
     public String toString(){
-        return "Employee{name='" + name + "', yearjoined=" + yearjoined + ", basicSalary=" + basicSalary + "}";
+        return toString;
     }
 
     public double calculateSalary(){
-        return basicSalary;
+        return calculateSalary;
     }
 }
